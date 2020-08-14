@@ -5,23 +5,22 @@
       "menu-item#small-appliances",
       "menu-item#electronics"
     ],
-  
-    "props":{
+    "props": {
       "orientation": "horizontal"
     }
   },
-
-  "vtex.menu@2.x:submenu#major":{
-    "children":[
+  
+  "vtex.menu@2.x:submenu#major": {
+    "children": [
       "vtex.menu@2.x:menu#major"
     ]
   },
 
   "vtex.menu@2.x:menu#major": {
     "children": [
-        "menu-item#refrigerators",
-        "menu-item#ovens",
-        "menu-item#washers"
+      "menu-item#refrigerators",
+      "menu-item#ovens",
+      "menu-item#washers"
     ],
     "props": {
       "orientation": "vertical"
@@ -44,7 +43,7 @@
       "orientation": "vertical"
     }
   },
-
+  
   "vtex.menu@2.x:submenu#electronics": {
     "children": [
       "vtex.menu@2.x:menu#electronics"
