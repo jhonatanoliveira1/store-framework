@@ -1,26 +1,28 @@
 {
-  "store.custom#landing": {
-    "blocks": [
-      "image#landingbanner",
-      "search-result-layout.customQuery"
-    ]
-  },
+    "store.custom#landing": {
+        "blocks": [
+            "image",
+            "search-result-layout.customQuery"
+        ]
+    },
 
-  "image#landingbanner": {
-    "props": {
-      "minWidth": "100%",
-      "src": "https://picsum.photos/600/150"
+    "image": {
+        "props": {
+            "src": "https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2019/12/06/812889/20191206134003832181u.jpg",
+            "minWidth": "100%"
+        }
+    },
+
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip",
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "Blue Top Retro Camera"
+            }
+        }
     }
-  },
-  
-  "search-result-layout.customQuery": {
-    "props": {
-      "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 8,
-        "queryField": "Blue Top Retro Camera"
-      }
-    }
-  }
 }
